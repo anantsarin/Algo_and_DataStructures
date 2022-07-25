@@ -125,4 +125,3 @@ llist.printll(llist.head)
 llist.head = llist.skip_m_delete_n(llist.head, 2, 2)
 print("\nskip M and delete N ")
 llist.printll(llist.head)
-
