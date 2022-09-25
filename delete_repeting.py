@@ -50,11 +50,12 @@ class LinkedList:
                 curr = curr.next
         self.head = head.next
         return head.next
+
     def removeAllDuplicates2(self, temp):
 
         head = temp
         prev = Node(0)
-        sentinalhead= prev
+        sentinalhead = prev
         while head and head.next:
             if head.val == head.next.val:
                 while head.next and head.val == head.next.val:
@@ -98,8 +99,6 @@ if __name__ == '__main__':
     llist.push(28)
     llist.push(28)
 
-
-
     print("None")
     print('Created linked list is:')
     llist.printList()
@@ -108,5 +107,3 @@ if __name__ == '__main__':
     # print(head1)
     llist.removeAllDuplicates2(head1)
     llist.printList()
-
-

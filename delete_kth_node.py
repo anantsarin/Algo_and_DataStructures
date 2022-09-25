@@ -31,9 +31,10 @@ def deleteKthNode(head, k):
             count = 1
             head = head.next
         else:
-            count+=1
+            count += 1
             head = head.next
     return temp
+
 
 # Deletes every k-th node and
 # returns head of modified list.
@@ -111,5 +112,3 @@ if __name__ == '__main__':
     head = deleteKthNode(head, k)
 
     displayList(head)
-
-
